@@ -3,7 +3,7 @@
 int num1,num2,x=0,ans;
 
 int main(){
-    printf("³‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+    printf("³‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
     scanf("%d",&num1);
 
     if (num1 < 0)
@@ -16,7 +16,7 @@ int main(){
     scanf("%d",&num2);
 
     if(num2 < 0){
-        printf("%d?‚Í³‚Ì”‚Å‚Í‚ ‚è‚Ü‚¹‚ñB",num2);
+        printf("%d‚Í³‚Ì”‚Å‚Í‚ ‚è‚Ü‚¹‚ñB",num2);
         return 0;
     }
 
