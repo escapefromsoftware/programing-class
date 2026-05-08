@@ -4,62 +4,62 @@ int year;
 
 
 int main(){
-    printf("年を入力してください:");
+    printf("生まれた年を入力してください。:");
     scanf("%d", &year);
 if (year < 1900)
 {
-    printf("1900年より前の年は入力できません\n");
+    printf("エラー：1900以降にしてください。\n");
 }
 
 year = year - 1900;
 
 switch (year % 12) {
 case 0:
-    printf("子年\n");
+    printf("子\n");
     break;
 
     case 1:
-    printf("丑年\n");
+    printf("丑\n");
     break;
 
     case 2:
-    printf("寅年\n");
+    printf("寅\n");
     break;
 
     case 3:
-    printf("卯年\n");
+    printf("卯\n");
     break;
 
     case 4:
-    printf("辰年\n");
+    printf("辰\n");
     break;
 
     case 5:
-    printf("巳年\n");
+    printf("巳\n");
     break;
 
     case 6:
-    printf("午年\n");
+    printf("午\n");
     break;
 
     case 7:
-    printf("未年\n");
+    printf("未\n");
     break;
 
     case 8:
-    printf("申年\n") ;
+    printf("申\n") ;
     break;
 
     case 9:
-    printf("酉年\n");
+    printf("酉\n");
     break;
 
     case 10:
-    printf("戌年\n");
+    printf("戌\n");
     break;
 
     case 11:
-    printf("亥年\n");
+    printf("亥\n");
     break;
 }
 }

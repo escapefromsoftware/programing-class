@@ -4,11 +4,11 @@ int main()
 {
 
 int a,b,c;
-printf("1‚Â–Ú‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
+printf("1‚Â‚ß‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B:");
 scanf("%d", &a);
-printf("2‚Â–Ú‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
+printf("2‚Â‚ß‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B:");
 scanf("%d", &b);
-printf("3‚Â–Ú‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
+printf("3‚Â‚ß‚Ì”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B:");
 scanf("%d", &c);
 
 if (a <= b && b <= c)
@@ -38,4 +38,3 @@ else if (c <= b && b <= a)
 return 0;
 
 }
-//tinpo
