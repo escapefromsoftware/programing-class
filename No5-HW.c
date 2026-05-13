@@ -24,7 +24,7 @@ int main(){
                 continue;
             }
         }
-        if(count = 0){
+        if(count == 0){
             printf("%d ",i);
         }
         count = 0;
