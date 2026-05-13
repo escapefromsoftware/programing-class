@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-bool flag = true;
+int count = 0;
 int main(){
     int num ;
 
@@ -17,17 +17,17 @@ int main(){
     for(int i = 2; i < num; i++ ){
         for(n = 2; n < i-1; n++){
             if(i % n == 0){
-                flag = false;
+                count = 1;
                 break;
             }
             else{
                 continue;
             }
         }
-        if(flag == true){
+        if(count = 0){
             printf("%d ",i);
         }
-        flag = true;
+        count = 0;
     }
 return 0 ;
 }
