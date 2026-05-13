@@ -28,9 +28,15 @@ int main(){
         }
 
         if(count != 0){
-        printf("%d^%d ", i, count);
-        count = 0;
-        flag = true;
+            if(count == 1){
+                printf("%d ",i);
+                flag = true;
+            }
+            else{
+                printf("%d^%d ", i, count);
+                count = 0;
+                flag = true;
+            }
         }
 
         i++;
