@@ -31,6 +31,7 @@ int main(){
             if(count == 1){
                 printf("%d ",i);
                 flag = true;
+                count = 0;
             }
             else{
                 printf("%d^%d ", i, count);

@@ -1,27 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int a,b,c;
+int main(){
+    int i, j, a;
+    for(i = 1; i <= 20;i = i + 2){
+        for(j = 20; j >= i; j = j - 2){
+            printf(" ");
+        }
+        for(a = 1; a <= i; a++){
+            printf("*");
+        }
+        for(int b = 10; b >= i; b--){
+            printf(" ");
+        }
+        a++;
 
-    printf("1‚Â–Ú‚Ì‰È–Ú‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
-    scanf("%d", &a);
-    printf("2‚Â–Ú‚Ì‰È–Ú‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
-    scanf("%d", &b);
-    printf("3‚Â–Ú‚Ì‰È–Ú‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:");
-    scanf("%d", &c);
-
-    if (a >= 60 && b >= 60 && c >= 60)
-    {
-        printf("‡Ši‚Å‚·\n");
+        printf("\n");
     }
-    /*else if ((a >= 60 && b >= 60) || (a >= 60 && c >= 60) || (b >= 60 && c >= 60))
-    {
-        printf("ÄŒ±‚Å‚·\n");
-    }
-    else
-    {
-        printf("•s‡Ši‚Å‚·\n");
-    }*/
-    return 0;
 }
