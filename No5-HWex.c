@@ -18,7 +18,7 @@ int main(){
 
     do{
         if(flag == true){//*‚ð‚Â‚¯‚é‚©‚Â‚¯‚È‚¢‚©ƒtƒ‰ƒO‚Å”»’è
-            printf("* ");
+            printf("x ");
         }
         flag = false;
         
