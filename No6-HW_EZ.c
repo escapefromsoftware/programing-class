@@ -6,11 +6,11 @@ int main(){
     int score[10] = {0};
 
     for (int i = 0; i < 10 ;i++){
-        printf("%d 人目の点数を入力してください:",i+1);
+        printf("%d ?l???_?????????????????:",i+1);
         scanf("%d",&score[i]);
     }
 
-    printf("合格者は");
+    printf("???i???");
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 10; j++){
@@ -24,7 +24,7 @@ int main(){
                 
             }
             if(count >= 9){
-                printf("%d人目です。",j+1);
+                printf("%d?l?????B",j+1);
                 score[j] = -1;
                 count = 0;
                 break;
@@ -38,3 +38,4 @@ int main(){
 
 return 0;
 }
+

@@ -3,7 +3,7 @@
 int num1,num2,x=0,ans;
 
 int main(){
-    printf("整数を入力してください。");
+    printf("正の整数を入力してください。");
     scanf("%d",&num1);
 
     if (num1 < 0)
@@ -12,7 +12,7 @@ int main(){
         return 0;
     }
     
-    printf("整数を入力してください。");
+    printf("正の整数を入力してください。");
     scanf("%d",&num2);
 
     if(num2 < 0){
@@ -30,7 +30,6 @@ int main(){
         printf("%dと%dの最小公倍数は%dです。",num1,num2,ans);
     }
     else{
-        if(num2 < num1){
             do{
                 x++;
             }
@@ -38,6 +37,5 @@ int main(){
             ans = num1 * x;
             printf("%dと%dの最小公倍数は%dです。",num1,num2,ans);
         }
-    }
     return 0;
 }
