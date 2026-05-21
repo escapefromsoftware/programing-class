@@ -2,8 +2,8 @@
 
 int F[10] = {0, 1};
 int main(){
-    for(int n = 0; n < 10; n++){
-        F[n+2] = F[n+1] + F[n];
+    for(int n = 2; n < 10; n++){
+        F[n] = F[n-1] + F[n-2];
         printf("%d\n", F[n]);
     }
 }

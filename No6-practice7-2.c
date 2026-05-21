@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int a[10];
+double a[10];
 
 int main(){
     a[1] = 3;
     for(int n = 0; n <= 9; n++){
         switch (n) {
         case 0:
-            a[n] = a[n+1] / 2;
+            a[n] = a[n+1] / 2.0;
             break;
         case 1:
             a[n] = 3;
@@ -15,6 +15,6 @@ int main(){
         default:
             a[n] = a[n-1] * 2;
         }
-        printf("%d\n", a[n]);
+        printf("%lf\n", a[n]);
     }
 }
