@@ -4,7 +4,7 @@
 void main() {
     int i;
     int score[NUM];
-    float new_score[NUM];
+    double new_score[NUM];
     int max_score, min_score;
 
     for (i = 0; i < NUM; i++)
@@ -31,8 +31,8 @@ void main() {
 
     for(i = 0; i < NUM; i++)
     {
-        new_score[i] = 50 * (score[i] - min_score) / (max_score - min_score) + 50;
-        printf("%d人目の点数:%d -> %f\n",i+1,score[i],new_score[i]);
+        new_score[i] = 50.0 * (score[i] - min_score) / (max_score - min_score) + 50;
+        printf("%d人目の点数:%d -> %lf\n",i+1,score[i],new_score[i]);
     }
 
 
