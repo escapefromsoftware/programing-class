@@ -32,7 +32,7 @@ void main() {
     for(i = 0; i < NUM; i++)
     {
         new_score[i] = 50 * (score[i] - min_score) / (max_score - min_score) + 50;
-        printf("%d:%d -> %f\n",i+1,score[i],new_score[i]);
+        printf("%d人目の点数:%d -> %f\n",i+1,score[i],new_score[i]);
     }
 
 
