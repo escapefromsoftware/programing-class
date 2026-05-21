@@ -15,6 +15,6 @@ int main(){
         default:
             a[n] = a[n-1] * 2;
         }
-        printf("%lf\n", a[n]);
+        printf("%2.1f\n", a[n]);
     }
 }
