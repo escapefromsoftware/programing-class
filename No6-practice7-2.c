@@ -7,13 +7,13 @@ int main(){
     for(int n = 0; n <= 9; n++){
         switch (n) {
         case 0:
-            a[n] = a[n+1] * 2;
+            a[n] = a[n+1] / 2;
             break;
         case 1:
             a[n] = 3;
             break;
         default:
-            a[n] = a[n-1]*2;
+            a[n] = a[n-1] * 2;
         }
         printf("%d\n", a[n]);
     }
