@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int score[10] = {};
+int score[10] = {0};
 int rank[10] = {1,2,3,4,5,6,7,8,9,10};
 int main() {
     for (int i = 0; i < 10 ;i++){
-        printf("%d 人目の点数を入力してください:",i+1);
+        printf("%d 人目の点数を入力してください。:",i+1);
         scanf("%d",&score[i]);
     }
 
@@ -21,6 +21,6 @@ int main() {
             }
         }
     }
-    printf("合格者：%d人目、%d人目、%d人目です。\n",rank[0],rank[1],rank[2]);
+    printf("合格者は%d人目、%d人目、%d人目です。\n",rank[0],rank[1],rank[2]);
 
 }
