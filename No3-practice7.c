@@ -35,16 +35,4 @@ int main(){
         printf("Buzz");
         break;
     }
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaa
-a
-a
-a
-aaaaaaaaaaaaaaaaaaa
-a
-aaaaaaaaaaaaaa
-*/
 } 
