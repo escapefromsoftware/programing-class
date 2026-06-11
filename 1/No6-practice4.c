@@ -4,13 +4,13 @@
 void main() {
     int i;
     int score[NUM];
-    float new_score[NUM];
+    double new_score[NUM];
     int max_score, min_score;
 
     for (i = 0; i < NUM; i++)
     {
 
-        printf("%d人目の点数:",i+1);
+        printf("%d莠ｺ逶ｮ縺ｮ轤ｹ謨ｰ:",i+1);
         scanf("%d",&score[i]);
 
     }
@@ -27,14 +27,15 @@ void main() {
             min_score = score[i];
         }
     }
-    printf("最高点:%d 最低点:%d\n",max_score,min_score);
+    printf("譛螟ｧ蛟､:%d 譛蟆丞､:%d\n",max_score,min_score);
 
     for(i = 0; i < NUM; i++)
     {
-        new_score[i] = 50 * (score[i] - min_score) / (max_score - min_score) + 50;
-        printf("%d人目:%d → %f\n",i+1,score[i],new_score[i]);
+        new_score[i] = 50.0 * (score[i] - min_score) / (max_score - min_score) + 50;
+        printf("%d莠ｺ逶ｮ縺ｮ轤ｹ謨ｰ:%d -> %lf\n",i+1,score[i],new_score[i]);
     }
 
 
 }
+
 

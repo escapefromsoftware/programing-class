@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int a[10] = {0, 3, 6};
+int a[11];
 
 int main(){
+    a[1] = 3;
     for(int n = 1; n <= 10; n++){
-        a[n+2] = a[n+1] + a[n] * 2 - 3;
+        a[n+1] = a[n]*2;
         printf("%d\n", a[n]);
     }
 }

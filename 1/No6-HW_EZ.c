@@ -6,11 +6,11 @@ int main(){
     int score[10] = {0};
 
     for (int i = 0; i < 10 ;i++){
-        printf("%d l–Ú‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢:",i+1);
+        printf("%d äººç›®ã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„:",i+1);
         scanf("%d",&score[i]);
     }
 
-    printf("‡ŠiÒ‚Í");
+    printf("åˆæ ¼è€…ã¯");
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 10; j++){
@@ -24,7 +24,7 @@ int main(){
                 
             }
             if(count >= 9){
-                printf("%dl–Ú ",j+1);
+                printf("%däººç›® ",j+1);
                 score[j] = -1;
                 count = 0;
                 break;
