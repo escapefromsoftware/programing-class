@@ -17,4 +17,5 @@ int main(){
         ans = shirokuma(i);
         printf("%d! = %d\n", i, ans);
     }
+    return 0;
 }

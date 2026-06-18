@@ -19,4 +19,5 @@ int main(){
         ans = inazuma(i);
         printf("%d! = %d\n", i, ans);
     }
+    return 0;
 }

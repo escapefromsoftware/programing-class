@@ -18,4 +18,5 @@ int main(){
     scanf("%d", &n);
     ans = a(n);
     printf("%d", ans);
+    return 0;
 }
