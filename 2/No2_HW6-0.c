@@ -4,10 +4,10 @@ char *FNC(int n){
     static char kome[100];
 
     for(int i = 0; i < n; i++){
-        kome[i] = '*';
+        kome[i] = '*';//""だとコンパイルエラー
     }
 
-    kome[n] = '\0';
+    kome[n] = '\0';//配列の終わりの時に処理を終了
     return kome;
 }
 
