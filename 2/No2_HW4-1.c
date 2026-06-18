@@ -16,8 +16,6 @@ int fibo(int n){
 
 int main(){
     printf("メイン関数が開始されました。\n");
-    for (int n = 0; n <= 9; n++){
-        printf("fibo(%d) = %d\n", n, fibo(n));
-    }
+        printf("fibo(%d) = %d\n", 6, fibo(6));
     return 0;
 }
