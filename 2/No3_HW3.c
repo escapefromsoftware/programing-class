@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define W 8
 #define H 6
-static map[H][W]={
+static char map[H][W]={
 	{1,1,1,1,1,1,1,1},
 	{1,0,0,0,0,0,0,1},
 	{1,0,1,1,1,0,1,1},

@@ -3,7 +3,7 @@
 #define H 6
 
 int main(){
-    static map[H][W]={//Hは行,Wは列
+    static char map[H][W]={//Hは行,Wは列
 	{1,1,1,1,1,1,1,1},
 	{1,0,0,0,0,0,0,1},
 	{1,0,1,1,1,0,1,1},
