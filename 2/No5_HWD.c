@@ -140,7 +140,7 @@ int main(){
                     x++;
                 }
                 break;
-            case 1:
+            case 1: {
                 FILE *fp;
                 fp = fopen("data.txt", "w");
                 if(fp == NULL){
@@ -152,19 +152,23 @@ int main(){
                     printf("保存しました。\n");
                 }
                 break;
+            }
 
-            case 0:
+            case 0: {
                 FILE *fp2;
                 fp2 = fopen("data.txt", "r");
                 if(fp2 == NULL){
                     perror("ファイルを開けない\n");
                     exit(1);
                 }else{
-                    fscanf(fp2, "X=%d\nY=%d\n", &x, &y);
+                    if(fscanf(fp2, "X=%d\nY=%d\n", &x, &y) != 2){
+                        printf("データを読み込めません。\n");
+                    }
                     fclose(fp2);
                     printf("読み込みました。\n");
                 }
                 break;
+            }
 
             default:
                 printf("入力がおかしい\n");

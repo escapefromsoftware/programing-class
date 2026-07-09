@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 #define W 12
 #define H 10
 
@@ -81,7 +82,7 @@ void print_mini_map(int x, int y){
 
 int main(){
     int x, y;
-    int ip;
+    char ip;
     bool has_key = false;
     read_map();
     printf("座標1,1からのスタートです。\n");
@@ -212,7 +213,7 @@ int main(){
                     }
                 }
                 break;
-            case 'k':
+            case 'k': {
                 FILE *fp;
                 fp = fopen("No5_HWE_data.txt", "w");
                 if(fp == NULL){
@@ -224,19 +225,26 @@ int main(){
                     printf("保存しました。\n");
                 }
                 break;
+            }
 
-            case 'l':
+            case 'l': {
                 FILE *fp2;
+                int key;
                 fp2 = fopen("No5_HWE_data.txt", "r");
                 if(fp2 == NULL){
                     perror("ファイルを開けない\n");
                     exit(1);
                 }else{
-                    fscanf(fp2, "X=%d\nY=%d\nHP=%d\nMP=%d\nK=%d\n", &x, &y, &hp, &mp, &has_key);
+                    if(fscanf(fp2, "X=%d\nY=%d\nHP=%d\nMP=%d\nK=%d\n", &x, &y, &hp, &mp, &key) == 5){
+                        has_key = key;
+                    }else{
+                        printf("データを読み込めません。\n");
+                    }
                     fclose(fp2);
                     printf("読み込みました。\n");
                 }
                 break;
+            }
 
             case 'h':
                 if(mp <= 0){
