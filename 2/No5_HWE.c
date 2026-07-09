@@ -90,17 +90,17 @@ int main(){
     print_mini_map(x, y);
 
     while(1){
-        printf("上8, 左4, 右6, 下2, 回復5, 読込0, 保存1のいずれかを入力してください。\n");
-        if(scanf("%d", &ip) != 1 || ip == -1){
+        printf("上w, 左a, 右d, 下s, 回復h, 読込l, 保存kのいずれかを入力してください。\n");
+        if(scanf(" %c", &ip) != 1 || ip == -1){
             break;
         }
-        if(ip != 8 && ip != 6 && ip != 2 && ip != 4 && ip != 5 && ip != 1 && ip != 0){
+        if(ip != 'w' && ip != 'a' && ip != 'd' && ip != 's' && ip != 'h' && ip != 'l' && ip != 'k'){
             printf("不正な入力です。\n");
             continue;
         }
 
         switch(ip){
-            case 8:
+            case 'w':
                 y--;
                 hp--;
                 print_mini_map(x, y);
@@ -128,7 +128,7 @@ int main(){
                     }
                 }
                 break;
-            case 6:
+            case 'd':
                 x++;
                 hp--;
                 print_mini_map(x, y);
@@ -156,7 +156,7 @@ int main(){
                     }
                 }
                 break;
-            case 2:
+            case 's':
                 y++;
                 hp--;
                 print_mini_map(x, y);
@@ -168,8 +168,23 @@ int main(){
                     printf("そこは通れません\n");
                     y--;
                 }
+                else if(map[y][x] == '3'){
+                    printf("鍵を手に入れました。\n");
+                    map[y][x] = '0';
+                    has_key = true;
+                }
+                else if(map[y][x] == '4'){
+                    if(has_key){
+                        printf("扉を開けました。\n");
+                        map[y][x] = '0';
+                        has_key = false;
+                    }else{
+                        printf("扉は閉まっています。\n");
+                        y--;
+                    }
+                }
                 break;
-            case 4:
+            case 'a':
                 x--;
                 hp--;
                 print_mini_map(x, y);
@@ -197,7 +212,7 @@ int main(){
                     }
                 }
                 break;
-            case 1:
+            case 'k':
                 FILE *fp;
                 fp = fopen("No5_HWE_data.txt", "w");
                 if(fp == NULL){
@@ -210,7 +225,7 @@ int main(){
                 }
                 break;
 
-            case 0:
+            case 'l':
                 FILE *fp2;
                 fp2 = fopen("No5_HWE_data.txt", "r");
                 if(fp2 == NULL){
@@ -223,7 +238,7 @@ int main(){
                 }
                 break;
 
-            case 5:
+            case 'h':
                 if(mp <= 0){
                     printf("MPが足りません。\n");
                     break;
