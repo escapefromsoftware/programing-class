@@ -13,8 +13,8 @@ void koch(double x0, double y0, double x1, double y1, int n, FILE *fp){
         double y2 = (2*y0 + y1) / 3;
         double x3 = (x0 + 2*x1) / 3;
         double y3 = (y0 + 2*y1) / 3;
-        double x4 = (x2 + x3) / 2 - sqrt(3.0) * (y3 - y2) / 6;
-        double y4 = (y2 + y3) / 2 + sqrt(3.0) * (x3 - x2) / 6;
+        double x4 = (x2 + x3) / 2 - sqrt(3.0) * (y3 - y2) / 3;
+        double y4 = (y2 + y3) / 2 + sqrt(3.0) * (x3 - x2) / 3;
 
         koch(x0, y0, x2, y2, n-1, fp);
         koch(x2, y2, x4, y4, n-1, fp);
